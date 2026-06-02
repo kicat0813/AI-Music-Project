@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="music.css">
+  <title>AI音樂創作</title>
+</head>
+<body>
+  <div class="container top-space" id="home">
+    <section class="hero-shell">
+      <div class="hero-topbar">
+        <div class="brand">
+          <div class="brand-icon">♫</div>
+          <div>            
+            <div>AI 音樂專題展示網站</div>
+          </div>
+        </div>
+        <div class="subtle">自創曲 / 改編曲 / 情緒標籤</div>
+      </div>
+
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">專題成果展示</div>
+          <h1 class="hero-title">
+            AI 功能探討
+            <span class="gradient-text">　　--音樂應用</span>
+          </h1>
+          
+          <div class="hero-actions">
+            <a href="#works" class="btn primary">查看作品</a>
+            <a href="#theory" class="btn">理論整合</a>
+          </div>
+
+          <div class="stats-grid">
+            <div class="mini-card">
+              <div class="subtle">作品類型</div>
+              <strong>自創曲 / 改編曲</strong>
+            </div>
+            <div class="mini-card">
+              <div class="subtle">分類方式</div>
+              <strong>#情緒 #主題 #曲風</strong>
+            </div>
+            <div class="mini-card">
+              <div class="subtle">展示重點</div>
+              <strong>MV × 故事 × 分析</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="glow"></div>
+          <div class="visual-card">
+            <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1200&q=80" alt="project cover">
+            <div class="visual-overlay">
+              <div>               
+                <h2 style="margin: 10px 0 0; font-size: 2rem;">歌詞 × 旋律 × 情緒感受</h2>
+                <p class="hero-desc" style="margin-top: 12px; max-width: 500px;">
+                  透過改變歌曲的旋律與曲風，在保持歌詞不變的情況下，觀察情緒是否隨之轉換，進一步比較歌詞與音樂對情緒的影響差異。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="theory">
+      <div class="theory-grid">
+        <div class="theory-card">
+          <div class="theory-icon">♫</div>
+          <h3>音樂與情緒</h3>
+          <p>節奏、調性與編曲層次會影響聽者對歌曲的情緒感受，是本專題探討音樂影響的重要基礎。</p>
+        </div>
+        <div class="theory-card">
+          <div class="theory-icon">#</div>
+          <h3>標籤文化</h3>
+          <p>以 # 分類歌曲情緒、主題與曲風，讓作品更容易被理解、比較與搜尋。</p>
+        </div>
+        <div class="theory-card">
+          <div class="theory-icon">✦</div>
+          <h3>曲風轉換實驗</h3>
+          <p>透過 AI 改編同一首歌曲，在保持歌詞不變的情況下改變旋律與曲風，觀察聽者情緒是否隨之轉換。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="works">
+  <div class="section-card works-card">
+    <div class="works-top">
+      <div class="works-heading">
+        <div class="eyebrow">成品展示</div>
+        <h2 class="section-title">作品展示</h2>
+        <p class="works-desc">
+          本區收錄自創曲與改編曲作品，透過情緒標籤、歌曲故事與 MV 展示，
+          呈現音樂在旋律、歌詞與情緒表達上的不同變化。
+        </p>
+      </div>
+
+      <div class="filters works-filters">
+        <button class="filter-btn active" data-filter="all">全部</button>
+        <button class="filter-btn" data-filter="自創曲">自創曲</button>
+        <button class="filter-btn" data-filter="改編曲">改編曲</button>
+      </div>
+    </div>
+
+    <div class="songs-grid" id="songsGrid"></div>
+  </div>
+</section>
+
+<section class="section" id="stories">
+  <div class="section-card">
+    <div class="eyebrow">音樂故事</div>
+    <h2 class="section-title">歌曲故事總覽</h2>
+    <p class="works-desc">
+  本區整理各首作品的創作背景與情緒脈絡，讓觀眾在觀看 MV 與聆聽歌曲之外，也能更完整理解每首作品背後的情境、情感與創作想法。
+    </p>
+
+    <div class="story-summary-box">
+      <h3>故事總整</h3>
+      <p>
+        一、暗戀篇：雨中一把傘<br>
+
+某個下班的夜晚，城市下起了傾盆大雨。
+我沒有帶傘，只好躲進轉角的咖啡店屋簷下。
+雨聲嘩啦啦，心裡只盼望著雨能快點停。
+忽然，一股淡淡的花香飄過，我抬頭看見一名女子站在我面前。
+她遞來一把傘，聲音溫柔卻帶點俏皮：
+「有緣再見時，再還給我吧。」
+
+我愣在原地，還沒來得及回話，她已消失在雨幕裡。
+那之後，我將那把傘好好收藏，甚至每天帶在身邊，幻想著再遇見她的場景。
+在人群裡，每當看見相似的背影，我都急忙追上，卻總是失望而歸。
+時間久了，我心裡開始動搖，想著也許再也遇不到她了。
+
+直到某一天，我走進我們初遇的那家咖啡店，竟看見她正靜靜坐在窗邊，翻閱一本書。
+她抬起頭，與我視線相撞，微笑著開口：
+「傘，你還記得帶來嗎？」<br><br>
+
+二、熱戀篇：炙熱的心跳<br>
+
+就這樣，我們再次相遇，並開始頻繁聯絡。
+第一次正式約會，我緊張到手心冒汗，卻裝作若無其事地聊著天。
+她笑得很燦爛，喝拿鐵時會先舔掉奶泡；走路時，總愛偷偷拉住我的手指，再慢慢十指緊扣。
+我們分享彼此的夢想、喜歡的歌單、還有深夜裡的小秘密。
+
+有一次，她送我一個親手編織的掛飾，上面還繡著一個小小的花朵圖案。
+我珍惜地把它放在床頭櫃上，每晚睡前看著它，彷彿能聽見她的笑聲。
+
+那段時間，我們做了很多瘋狂又甜蜜的事：
+
+半夜牽手跑到河堤看星星，淋了一身夜露。
+
+兩人點一份便當，故意搶著吃對方喜歡的配菜。
+
+她生氣時撅著嘴，卻還是忍不住笑出來。
+
+我以為，這樣的日子會一直持續下去。<br><br>
+
+三、理性篇：平淡與爭執<br>
+
+隨著時間過去，熱戀的火焰慢慢轉為日常的溫度。
+我們依然愛著彼此，但形式開始改變。
+
+我們不再每天聊到深夜，而是提醒彼此「該早睡了」。
+約會不再是驚喜，而是一起逛超市，討論要買哪個牌子的牛奶。
+有時候她工作太累，只想安靜待著，而我卻想撒嬌。
+她抱怨我太黏，我抱怨她太冷淡。
+我們努力磨合，卻開始出現裂縫。
+
+某一天，她在爭吵中哭著說：
+「我們是不是，沒有以前那麼快樂了？」
+我沉默，因為我也感覺到了。
+愛情漸漸變成了責任與習慣，而激情被生活磨成了理性。<br><br>
+
+四、分手篇：最後的雨天<br>
+
+那一天，又下起了雨。
+我們坐在同一家咖啡店裡，靠窗的位置。
+窗外的雨聲像在敲打我們的沉默。
+
+她終於開口，聲音顫抖卻堅定：
+「或許…我們真的走不下去了。」
+我握著咖啡杯的手顫抖，卻只能輕輕點頭。
+
+分手後的日子，我依然把那把傘和她送我的掛飾留著。
+只是傘從未再撐開過，掛飾上也落了薄薄一層灰。
+偶爾望著它們，我心裡還會想起她當初的話：
+「有緣再見。」
+      </p>
+    </div>
+
+    <div class="story-grid" id="storyGrid"></div>
+  </div>
+</section>
+
+<section class="section" id="notice">
+  <div class="section-card" style="text-align: center; padding: 40px 20px;">
+    <div class="eyebrow">作品聲明</div>
+    <h2 class="section-title" style="font-size: 1.6rem;">
+      以上作品皆由 AI 生成，僅供學術研究與展示使用，無任何商業用途
+    </h2>
+  </div>
+</section>
+
+<div class="floating-nav">
+  <button class="floating-btn" id="navToggle">目錄</button>
+
+  <div class="floating-menu" id="floatingMenu">
+    <a href="#home">首頁</a>
+    <a href="#theory">理論整合</a>
+    <a href="#works">作品展示</a>
+    <a href="#stories">音樂故事</a>
+    <a href="#notice">作品聲明</a>
+  </div>
+</div>
+
+  <div class="modal" id="songModal">
+    <div class="modal-panel">
+      <div class="modal-head">
+        <div>
+          <div class="subtle">作品詳情</div>
+          <div id="modalTitle" style="font-size: 1.2rem; margin-top: 4px;">歌曲名稱</div>
+        </div>
+        <button class="close-btn" id="closeModal">✕</button>
+      </div>
+      <div class="modal-grid">
+        <div class="media-side">
+          <div class="video-box" id="videoBox"></div>
+        </div>
+        <div class="detail-side">
+          <div id="modalType" class="type-badge" style="position: static; padding: 8px 12px; background: #fff; color: #111; margin-bottom: 12px;"></div>
+          <div class="tags" id="modalTags" style="margin-top: 0;"></div>
+
+          <div class="detail-block">
+            <div class="detail-label">歌曲介紹</div>
+            <div class="detail-text" id="modalStory"></div>
+          </div>
+
+          <div class="detail-block">
+            <div class="detail-label">情緒感受</div>
+            <div class="detail-text" id="modalMood"></div>
+          </div>
+
+          <div class="detail-block">
+            <div class="detail-label">理論與視覺延伸</div>
+            <div class="detail-text" id="modalAnalysis"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const songs = [
+      {
+        id: 1,
+        title: "一把雨",
+        type: "自創曲",
+        short: "以一把傘與下雨為記憶點，將兩者結合在一起為一把雨，描寫說不出口的喜歡。",
+        tags: ["#暗戀", "#害怕", "#慢歌","擔心"],
+        mood: "一段感情中既期待對方會接受自己、卻又害怕自己失敗，好想把自己對對方的喜歡表達出來，但又不知道怎麼說出口。",
+        story: "在一個平凡的雨夜，主角因為沒帶傘而躲進咖啡店屋簷下，意外遇見一位遞傘給他的女孩，短暫的相遇卻在心中留下深刻悸動。之後他帶著那把傘，在人群中不斷尋找她的身影，從期待重逢到逐漸動搖，直到某天再次在咖啡店相遇，兩人開始有了聯繫，從聊天、散步到分享生活，距離一點點拉近。隨著相處加深，他慢慢意識到自己早已喜歡上她，卻將心意藏在日常之中。",
+        analysis: "本作品以「暗戀」作為主題，因為這種情感同時包含期待、不安與心動，具有豐富的情緒層次，適合用來探討音樂對情緒的影響。透過 AI 音樂生成的方式，嘗試創作出能引起共鳴的歌曲，並觀察 AI 是否能透過旋律與編曲帶動聽者的情感感受。整體創作上採用偏慢節奏與內斂的表達方式，參考現代流行樂都會添加些許英文歌此來搭配，並貼近日常對話的歌詞呈現，使聽者更容易代入情境，進一步強化情緒共鳴。",
+        cover: "pic/一把雨.jpg",
+        youtube: "https://www.youtube.com/embed/zuIV1z4eVmo"
+      },
+      {
+        id: 2,
+        title: "清晨",
+        type: "自創曲",
+        short: "在一段愛情中從清晨的開始到夜晚的結束所發生的點點滴滴",
+        tags: ["#愛情", "陪伴","生活細節","#遷就", "#情侶"],
+        mood: "這首歌想呈現的是一對情侶生活中的點點滴滴，與瑣事不論是爭吵還是意見分歧都遷就的對方",
+        story: "故事在講述一段熱戀中的感情，兩個人無時無刻都想待在一起。在生活中的瑣碎也都在遷就著對方。也在二個個性不同的人在生活中的互補。",
+        analysis: "本作品以「熱戀」作為主題，在感情中沒有所謂的合適，只有所謂的遷就與互補這段感情才有辦法長久與甜蜜。",
+        cover: "pic/清晨.png",
+        youtube: "https://www.youtube.com/embed/s3D0ltV_q6c"
+      },
+      {
+        id: 3,
+        title: "還記得那時候",
+        type: "自創曲",
+        short: "這首歌描述一段從熱烈到漸漸冷淡的感情，透過回憶與現在的對比，呈現出失去之後才發現的在意與遺憾。",
+        tags: ["#感情轉變", "#熱戀到平淡", "#回憶","遺憾","失去才懂"],
+        mood: "帶有一種淡淡的難過，不是崩潰的痛，而是那種回頭看才發現「原來已經變了」的無力感。聽的時候會讓人想起曾經很重要的人。",
+        story: "故事是在講一段曾經很甜的感情，兩個人從無話不談，到後來變得沉默與疏離。雖然沒有激烈的衝突，但距離卻慢慢拉開，最後只剩回憶。主角在現在的時間點回頭看過去，才意識到當初的美好已經回不去了。",
+        analysis: "本作品以「平淡戀」為主題，創作這首歌，是因為想表達「感情不是突然結束，而是慢慢變淡」這種現實。很多人以為分開是因為某個瞬間，但其實是在日常中一點一滴流失的。所以我用比較平淡但帶情緒的方式去寫，讓聽的人能夠在旋律跟歌詞中，慢慢感受到那種變化的過程。",
+        cover: "pic/還記得那時候.jpg",
+        youtube: "https://www.youtube.com/embed/fxB1PETf-Iw"
+      },
+      {
+        id: 4,
+        title: "你說的晚安",
+        type: "自創曲",
+        short: "這首歌描寫一段在沉默中結束的感情，從分手當下的心碎，到之後反覆想念與掙扎，最後慢慢學會放下。透過「晚安」、街道與回憶等細節，呈現失去一個人後，整個世界都變得不一樣的感受。整體情緒從悲傷延伸到釋懷，是一首細膩又真實的失戀抒情歌。",
+        tags: ["#失戀", "#懷念", "#流行曲"],
+        mood: "壓抑自己的情緒，對於分開的感情還是充滿著錯愕，回過神後的心碎與否認，只剩一個人的孤獨，最後釋懷的成長了。",
+        story: "這首歌以雨天為開場，從窗邊的沉默到一句結束關係的低語，細膩描繪出一段愛情崩解的瞬間。將「失去」這件事放大，不只是失去一個人，而是整個世界都跟著失去平衡。以「晚安」為核心意象，把曾經最溫柔的日常，轉化為最刺痛的回憶。那些重複過無數次的簡單話語，在分開之後，成為最難放下的痕跡。從無法接受、反覆想念，到試圖刪除對方存在卻徒勞無功，層層堆疊出失戀後的真實樣貌。直到最後，主角在時間裡學會與回憶共處，把愛留在過去，也把自己慢慢找回來。",
+        analysis: "本作品以「失戀」為主題，能讓有幾乎相同，或者有過類似經歷的人能去回憶那些美好的回憶以及能讓自己成長的過去。",
+        cover: "pic/你說的晚安.jpg",
+        youtube: "https://www.youtube.com/embed/Wp2DRwH-fXo"
+      },
+      {
+        id: 5,
+        title: "澄色天空",
+        type: "自創曲",
+        short: "這首歌以青春戀愛為主題，透過明亮的節奏與溫柔的旋律，描繪出喜歡上一個人時那種心跳加速與滿滿期待的感覺。從橙色天空的夏日氛圍，到想見對方的每一刻，整首歌充滿純粹又勇敢的情感，是一首帶有初戀氣息的甜蜜告白歌曲。",
+        tags: ["#快歌", "#悸動", "#心動","#青春"],
+        mood: "這首歌的情緒很像剛喜歡上一個人的時候，會一直想到對方、看到什麼都覺得很開心，心跳也會不自覺變快。整體感覺很甜、很輕鬆，會讓人有種在戀愛中的幸福感。",
+        story: "這首歌的靈感來自於在喜歡上一個人時，那種不自覺會一直想起對方的感覺。從日常生活中的小細節，到每一次心跳加速的瞬間，這些看似平凡的情緒，卻讓整個世界變得不一樣。因此將這份單純又真誠的悸動轉化成歌曲，創作出這首充滿青春與甜蜜氛圍的作品。",
+        analysis: "本作品透過快節奏與明亮編曲，呈現戀愛初期的愉悅與期待感，使聽者能感受到心跳加速的情緒。在視覺上以橙色與暖色系為主，搭配夏日與夕陽元素，強化青春戀愛的氛圍，並以簡約字幕形式呈現歌詞，提升整體情緒的沉浸感。",
+        cover: "pic/澄色天空.jpg",
+        youtube: "https://www.youtube.com/embed/5Bh8JEB5cC8"
+      },
+      {
+        id: 6,
+        
+        title: "我很好騙-AI改編版本",
+        type: "改編曲",
+        short: "改編自原曲：動力火車的[我很好騙]，本作品僅供學術研究使用，無任何商業用途。",
+        tags: ["#輕快", "#釋懷", "#青春"],
+        mood: "改編曲會有種與過去的自己和解的感覺",
+        story: "《我很好騙》改編版本，本作品以原曲《我很好騙》為基礎，透過 AI 音樂生成技術，將原本偏向分離與思念情緒的歌曲重新轉換為明亮、輕快的曲風，並保留原有歌詞語意不變；本實驗旨在探討在相同歌詞條件下，改變音樂風格是否會影響聽者的情緒感受，進一步分析「旋律與編曲」與「歌詞內容」對情緒影響的差異，本作品僅供學術研究使用，無任何商業用途。",
+        analysis: "本作品的理論基礎在於探討音樂中「旋律與曲風」與「歌詞內容」對情緒感受的影響差異，一般而言，歌詞負責傳遞語意與故事，而旋律與節奏則影響整體氛圍與情緒感知，本研究透過控制變因（固定歌詞內容），並改變音樂的節奏、調性與編曲風格，觀察聽者在不同版本下的情緒變化，以分析兩者在情緒傳遞上的主導性；在視覺延伸上，本作品採用黑底白字的字幕式呈現，降低畫面干擾，使觀眾專注於音樂與歌詞本身，並透過文字出現的節奏與停頓強化情緒流動，使視覺與聲音形成簡潔但具有引導性的表現方式，進一步凸顯音樂風格轉換所帶來的情緒差異。",
+        cover: "pic/我很好騙.png",
+        youtube: "https://www.youtube.com/embed/tTb08jT6604"
+      },
+      {
+        id: 7,
+        title: "澄色天空-改編版本",
+        type: "改編曲",
+        short: "這首歌以夕陽與夏天作為開場，描繪出一段曾經甜蜜卻已成為回憶的感情。原本充滿心動與期待的告白，在時間流逝後轉化為思念與遺憾，使整首歌在溫柔中帶著淡淡的心痛，呈現出從喜歡到失去的情感變化。",
+        tags: ["#懊悔", "#失去", "#還是想你"],
+        mood: "透過降低節奏與簡化編曲，將原本高喚起的戀愛情緒轉化為低喚起的失落與思念，呈現由「喜歡」轉為「失去」的情感變化。",
+        story: "本作品原為描寫最喜歡對方時期的甜蜜情感，然而在關係結束後，以失戀視角重新詮釋，使原本的告白轉變為帶有回憶與遺憾的情緒表達，形成強烈的時間與情感對比。",
+        analysis: "透過節奏、編曲與音色的轉換，觀察音樂元素如何影響情緒感受，並驗證相同歌詞在不同音樂風格下，能產生截然不同的情緒詮釋。",
+        cover: "pic/澄色天空 改橫.png",
+        youtube: "https://www.youtube.com/embed/YJYJ4PDevXk"
+      }
+    ];
+  
+    const songsGrid = document.getElementById('songsGrid');
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const modal = document.getElementById('songModal');
+    const closeModal = document.getElementById('closeModal');
+    const storyGrid = document.getElementById('storyGrid');
+    const navToggle = document.getElementById('navToggle');
+    const floatingMenu = document.getElementById('floatingMenu');
+
+    function renderSongs(filter = 'all') {
+      const filtered = filter === 'all' ? songs : songs.filter(song => song.type === filter);
+      songsGrid.innerHTML = filtered.map(song => `
+        <article class="song-card">
+          <div class="song-cover">
+            <img src="${song.cover}" alt="${song.title}">
+            <div class="type-badge">${song.type}</div>
+            <button class="play-btn" onclick="openSong(${song.id})">▶</button>
+          </div>
+          <div class="song-content">
+            <h3>${song.title}</h3>
+            <p>${song.short}</p>
+            <div class="tags">
+              ${song.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+            </div>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    function openSong(id) {
+      const song = songs.find(item => item.id === id);
+      if (!song) return;
+
+      document.getElementById('modalTitle').textContent = song.title;
+      document.getElementById('modalType').textContent = song.type;
+      document.getElementById('modalStory').textContent = song.story;
+      document.getElementById('modalMood').textContent = song.mood;
+      document.getElementById('modalAnalysis').textContent = song.analysis;
+      document.getElementById('modalTags').innerHTML = song.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
+
+      document.getElementById('videoBox').innerHTML = `
+        <iframe
+          src="${song.youtube}"
+          title="${song.title}"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      `;
+
+      modal.classList.add('show');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeSongModal() {
+      modal.classList.remove('show');
+      document.body.style.overflow = '';
+      document.getElementById('videoBox').innerHTML = '';
+    }
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        renderSongs(button.dataset.filter);
+      });
+    });
+
+    closeModal.addEventListener('click', closeSongModal);
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeSongModal();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeSongModal();
+    });
+
+    navToggle.addEventListener('click', () => {
+    floatingMenu.classList.toggle('show');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.floating-nav')) {
+    floatingMenu.classList.remove('show');
+    }
+    });
+    renderSongs();
+    renderStories();
+    
+  </script>
+</body>
+</html>
